@@ -1,0 +1,79 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>NEWS HIGHLIGHT</title>
+    {% endif %}
+</head>
+<body>
+    {% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h2>NEWS</h2></div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>GENERAL</h2>
+            </div>
+            {{macro.displaySourceList(general)}}
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>BUSINESS</h2>
+            </div>
+            {{ macro.displaySourceList(business)}}
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>ENTERTAINMENT</h2>
+            </div>
+            {{macro.displaySourceList(entertainment)}}
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>HEALTH</h2>
+            </div>
+            {{macro.displaySourceList(health)}}
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>SCIENCE</h2>
+            </div>
+            {{macro.displaySourceList(science)}}
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>TECHNOLOGY</h2>
+            </div>
+            {{macro.displaySourceList(technology)}}
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>SPORTS</h2>
+            </div>
+            {{macro.displaySourceList(sports)}}
+        </div>
+    </div>
+   
+{% endblock %}    
+</body>
+</html>
