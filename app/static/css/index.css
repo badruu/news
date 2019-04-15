@@ -1,5 +1,39 @@
 body
 {
-    background-image: linear-gradient(to bottom, #050003, #0a050a, #0d090f, #0f0e14, #111218, #12151b, #12181d, #121a1f, #121d21, #122023, #122224, #132525);
-    color: #fff;
+    background-image: linear-gradient(to bottom, #000000, #151414, #232120, #302f2d, #3e3d3a, #3e3d3a, #3e3d3a, #3e3d3a, #302f2d, #232120, #151414, #000000);
+    color: white;
+}
+#header
+{
+    border: #fff;
+    border-width: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#general
+{
+    box-shadow: #000000;
+    text-align: center;
+    padding-top: 2%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+#source
+{
+    text-align: right;
+    font-family: sans-serif;
+    font-size: large;
+}
+#description
+{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: large;
+}
+#business
+{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
