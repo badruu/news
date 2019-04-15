@@ -20,55 +20,62 @@
     {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-md-12"><h2>NEWS</h2></div>
+            <div class="col-xs-12 col-sm-4 col-lg-12 col-md-12" id="header"><h1>NEWS HIGHLIGHT</h1></div>
 
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12 col-sm-4 col-lg-12 col-md-12" id="general">
                 <h2>GENERAL</h2>
+                <br>
             </div>
             {{macro.displaySourceList(general)}}
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="business">
                 <h2>BUSINESS</h2>
+                <hr>
             </div>
             {{ macro.displaySourceList(business)}}
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="business">
                 <h2>ENTERTAINMENT</h2>
+                <hr>
             </div>
             {{macro.displaySourceList(entertainment)}}
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="business">
                 <h2>HEALTH</h2>
+                <hr>
             </div>
             {{macro.displaySourceList(health)}}
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="business">
                 <h2>SCIENCE</h2>
+                <hr>
             </div>
             {{macro.displaySourceList(science)}}
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="business">
                 <h2>TECHNOLOGY</h2>
+                <hr>
             </div>
             {{macro.displaySourceList(technology)}}
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="business">
                 <h2>SPORTS</h2>
+                <hr>
             </div>
             {{macro.displaySourceList(sports)}}
         </div>
