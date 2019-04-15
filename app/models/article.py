@@ -9,6 +9,6 @@ class Article:
         self.title=title
         self.description=description
         self.url=url
-        self.utlToImage=urlToImage
+        self.urlToImage=urlToImage
         self.publishedAt=publishedAt
         self.content=content
